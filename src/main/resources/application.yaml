@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: @activatedProperties@
+
+  cache:
+    cache-names:
+      filteredCards
+
+#Actuator
+management:
+  health:
+    db:
+      enabled: true
+    mongo:
+      enabled: true
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    info:
+      enabled: true
+  info:
+    env:
+      enabled: true
+    build:
+      enabled: true
+
